@@ -5,11 +5,9 @@ const list = document.getElementById('list')
 const form = document.getElementById('form')
 const text = document.getElementById('text')
 const amount = document.getElementById('amount')
-
 const localStorageTransactions = JSON.parse(
     localStorage.getItem('transactions')
 );
-
 let transactions = localStorage.getItem('transactions') !== null ? localStorageTransactions : [];
 function addTransaction(e) {
     e.preventDefault();
@@ -42,7 +40,6 @@ function addTransactionDOM(transaction) {
     `;
     list.appendChild(item);
 }
-
 function updateValues() {
     const amounts = transactions.map(transaction => transaction.amount);
     const total = amounts.reduce((acc, item) => (acc += item), 0).toFixed(2);
@@ -56,22 +53,18 @@ function updateValues() {
     money_plus.innerText = `${income} €`;
     money_minus.innerText = `${expense} €`;
 }
-
 function removeTransaction(id) {
     transactions = transactions.filter(transaction => transaction.id !== id);
     updateLocalStorage();
     init();
 }
-
 function updateLocalStorage() {
     localStorage.setItem('transactions', JSON.stringify(transactions));
 }
-
 function init() {
     list.innerHTML = '';
     transactions.forEach(addTransactionDOM);
     updateValues()
 }
-
 init();
 form.addEventListener('submit', addTransaction);
