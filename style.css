@@ -1,11 +1,4 @@
-h1,
-h2,
-h3,
-p,
-a,
-label,
-footer,
-input {
+h1,h2,h3,p,a,label,footer,input {
     font-family: Impact, Charcoal, sans-serif;
     letter-spacing: 0.65px;
     word-spacing: 0px;
@@ -16,7 +9,6 @@ input {
     font-variant: small-caps;
     text-transform: none;
 }
-
 h1 {
     font-size: 50px;
     text-align: center;
@@ -24,30 +16,23 @@ h1 {
     margin: 0;
     color: #000269;
 }
-
 h2 {
     font-size: 60px;
     margin: 0;
     color: #e7e7e7;
 }
-
 h3 {
     font-size: 25px;
     margin: 10px;
-    font-weight: lighter;
     text-align: center;
     box-shadow: 5px 5px 5px 0px #000000, 47px 34px 32px 27px rgba(166, 166, 166, 0);
     padding: 3px;
     color: #FFFFFF;
     background: #333333;
-    
 }
-
 p {
     font-size: 20px;
 }
-
-
 footer {
     color: #d4d4d4;
     font-size: x-small;
@@ -60,22 +45,18 @@ footer {
     border-radius: 40px;
     box-shadow: 0px 0px 5px 0px #4B0082, 0px 0px 10px 0px #0000FF, 0px 0px 15px 0px #00FF00, 0px 0px 20px 0px #FFFF00, 0px 0px 25px 0px #FF7F00, 0px 0px 30px 0px  #FF0000, 0px 0px 35px 0px rgba(166, 166, 166, 0);
 }
-
 a {
     color: #ffd900;
 }
-
 body {
     background: #D00000;
     background: radial-gradient(ellipse at center, #D00000 0%, #370000 69%, #000000 100%);
-    ;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
 }
-
 .container {
     background: #FFFFFF;
     background: radial-gradient(ellipse at center, #FFFFFF 0%, #C8C8C8 51%, #6F6F6F 100%);
@@ -85,7 +66,6 @@ body {
     text-align: center;
     box-shadow: 5px 5px 5px 0px #000000, 47px 34px 32px 27px rgba(166, 166, 166, 0);
 }
-
 .icon {
     width: 50px;
     height: 50px;
@@ -93,8 +73,6 @@ body {
     border-radius: 50px;
     margin-bottom:3px;
 }
-
-
 .inc-exp-container {
     background-color: rgb(0.89,0.89,0.89,0.25);
     display: flex;
@@ -104,7 +82,6 @@ body {
     height: auto;
 
 }
-
 .inc-exp-container>div {
     flex: 1;
     text-align: center;
@@ -114,26 +91,21 @@ body {
     letter-spacing: 1px;
     margin: 5px 0;
 }
-
 .money.plus {
     color: #56e603;
     font-size: 30px;
 }
-
 .money.minus {
     color: #bb0202;
     font-size: 30px;
 }
-
 label {
     display: inline-block;
     margin: 10px;
     font-size: 22px;
     color: #131313;
 }
-
-input[type='text'],
-input[type='number'] {
+input[type='text'],input[type='number'] {
     border: 1px solid #dedede;
     border-radius: 2px;
     display: block;
@@ -142,7 +114,6 @@ input[type='number'] {
     padding: 10px;
     width: 96%;
 }
-
 .btn {
     cursor: pointer;
     background-color: #b10101;
@@ -152,28 +123,19 @@ input[type='number'] {
     display: block;
     font-family: Impact, Charcoal, sans-serif;
     letter-spacing: 0.65px;
-    word-spacing: 0px;
-    font-weight: lighter;
     font-size: 18px;
-    font-style: normal;
     font-variant: small-caps;
-    text-transform: none;
     margin: 10px;
     padding: 10px;
     width: 96%;
 }
-
-.btn:focus,
-.delete-btn:focus {
+.btn:focus,.delete-btn:focus {
     outline: 0;
 }
-
 .list {
-    list-style: none;
     padding: 0;
     margin-bottom: 40px;
 }
-
 .list li {
     background-color: rgb(36, 36, 36);
     box-shadow: 5px 5px 5px 0px #000000, 47px 34px 32px 27px rgba(166, 166, 166, 0);
@@ -184,22 +146,15 @@ input[type='number'] {
     padding: 10px;
     font-family: Impact, Charcoal, sans-serif;
     letter-spacing: 0.65px;
-    word-spacing: 0px;
-    font-weight: lighter;
-    font-style: normal;
     font-variant: small-caps;
-    text-transform: none;
     margin: 15px;
 }
-
 .list li.plus {
     border-right: 15px solid #48c400;
 }
-
 .list li.minus {
     border-right: 15px solid #bb0202;
 }
-
 .delete-btn {
     cursor: pointer;
     background-color: #e74c3c;
@@ -215,11 +170,9 @@ input[type='number'] {
     opacity: 0;
     transition: opacity 0.3s ease;
 }
-
 * {
     box-sizing: border-box;
 }
-
 .list li:hover .delete-btn {
     opacity: 1;
 }
