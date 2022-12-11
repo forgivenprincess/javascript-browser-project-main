@@ -4,11 +4,7 @@ h3,
 p,
 a,
 label,
-var,
 footer,
-select,
-button,
-form,
 input {
     font-family: Impact, Charcoal, sans-serif;
     letter-spacing: 0.65px;
@@ -51,9 +47,6 @@ p {
     font-size: 20px;
 }
 
-* {
-    box-sizing: border-box;
-}
 
 footer {
     color: #d4d4d4;
@@ -138,7 +131,9 @@ body {
 
 label {
     display: inline-block;
-    margin: 10px 0;
+    margin: 10px;
+    font-size: 22px;
+    color: #131313;
 }
 
 input[type='text'],
@@ -158,7 +153,14 @@ input[type='number'] {
     color: #fff;
     border: 0;
     display: block;
-    font-size: 16px;
+    font-family: Impact, Charcoal, sans-serif;
+    letter-spacing: 0.65px;
+    word-spacing: 0px;
+    font-weight: lighter;
+    font-size: 18px;
+    font-style: normal;
+    font-variant: small-caps;
+    text-transform: none;
     margin: 10px 0 30px;
     padding: 10px;
     width: 100%;
@@ -217,6 +219,9 @@ input[type='number'] {
     transition: opacity 0.3s ease;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 .list li:hover .delete-btn {
     opacity: 1;
